@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>MeJsX Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style media="screen and (min-width: 480px) and (max-width: 500px)" type="text/css">
+        p {
+            color: #cccccc;
+        }
+
+        #lorem {
+            font-weight: bold;
+        }
+    </style>
+    <style media="print" type="text/css">
+        p {
+            font-family: Tahoma;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>
+        TEST
+    </h1>
+</div>
+<hr/>
+<div id="container">
+    <p id="lorem" style="line-height: 20px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi velit, pulvinar in pellentesque vel,
+        commodo vel tortor. Maecenas quis risus fringilla, sodales eros at, fringilla lorem. Vivamus ultricies turpis
+        non est varius, vel commodo purus ultrices. Aliquam suscipit neque libero, sed vehicula ex aliquam sed. Aliquam
+        sollicitudin risus ut leo venenatis molestie. Phasellus rhoncus pellentesque tellus vitae consectetur.
+        Suspendisse a maximus ex, sit amet tincidunt erat. Phasellus fermentum porttitor felis nec hendrerit. Aenean a
+        purus vel diam malesuada tempor sed ut lorem. Duis congue sagittis rhoncus. Aliquam tempor condimentum
+        malesuada. Curabitur euismod dolor lacus, eget aliquam purus auctor sodales.
+    </p>
+</div>
+<hr/>
+<hr/>
+<div>
+    <button onclick="showStyles();" type="button">Show me styles on `p`</button>
+    <br/>
+    <code id="code">
+    </code>
+</div>
+<script src="../lib/mejsx.js"></script>
+<script type="text/javascript">
+    var showStyles = function () {
+        var $lorem = document.getElementById('lorem');
+        var $code = document.getElementById('code');
+        var rules = MEJSX.getCustomCssRulesOnElement($lorem);
+
+        for(var i = 0; i<rules.length; i++) {
+            $code.innerText += '\n\n//Order: ' + rules[i].order
+                + ' | Media:' + rules[i].media
+                + '\n'+rules[i].content;
+        }
+    }
+
+</script>
+</body>
+</html>

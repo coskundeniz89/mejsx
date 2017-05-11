@@ -1,0 +1,21 @@
+p{
+    font-size:18px;
+}
+
+#lorem {
+    padding: 10px;
+}
+
+@media (min-width: 300px), (min-device-width: 350px) {
+    p {
+      margin: 0;
+    }
+
+    #lorem {
+        border: 1px solid #000000;
+    }
+
+    h1 {
+        color:#000000;
+    }
+}
