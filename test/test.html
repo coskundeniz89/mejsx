@@ -53,6 +53,7 @@
         var rules = MEJSX.getCustomCssRulesOnElement($lorem);
 
         for(var i = 0; i<rules.length; i++) {
+            console.log(rules[i]);
             $code.innerText += '\n\n//Order: ' + rules[i].order
                 + ' | Media:' + rules[i].media
                 + '\n'+rules[i].content;
