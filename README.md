@@ -25,3 +25,5 @@ This function is useful when you need to access CSS style rules applied by the a
  >// elementRule.media =&gt; Media query
 
 ![elementRule](https://github.com/mental-soft/mejsx/blob/master/readme-files/elementrule.jpg)
+
+Example project on jsFiddle: [https://jsfiddle.net/er_han/39g2c838/](https://jsfiddle.net/er_han/39g2c838/)
