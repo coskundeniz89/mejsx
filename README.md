@@ -9,7 +9,10 @@ This function is useful when you need to access CSS style rules applied by the a
  - Includes rules from external stylesheets
  - Includes rules from internal styles
  - Includes rules from `style` attribute
- - Returns the rules as this order:
+ - Returns the rules as this order:<br/><br/>
+     1. External stylesheets, load order into the document
+     2. Internal styles, written order in the document
+     3. Style attributes on the element
  
 #####Usage
  > var element = document.getElementById('idOfElement');<br/>
