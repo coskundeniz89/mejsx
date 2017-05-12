@@ -14,7 +14,7 @@ This function is useful when you need to access CSS style rules applied by the a
      2. Internal styles, written order in the document
      3. Style attributes on the element
  
-#####Usage
+**Usage**
  > var element = document.getElementById('idOfElement');<br/>
  > var elementRules = MEJSX.getCustomCssRulesOnElement(element);
  >
