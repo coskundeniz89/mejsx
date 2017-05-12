@@ -20,3 +20,5 @@ This function is useful when you need to access CSS style rules applied by the a
  >// elementRule.order =&gt; Ordering number of the rule <br/>
  >// elementRule.content =&gt; CSS content <br/>
  >// elementRule.media =&gt; Media query
+
+![elementRule](https://github.com/mental-soft/mejsx/blob/master/readme-files/elementrule.jpg)
